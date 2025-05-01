@@ -12,6 +12,11 @@ public:
         newNode->data = data;
         newNode->next = head;
         head = newNode;
+        //testing
+        // head->next = new Node;
+        // head->next->data = -303;
+        // head->next->next = new Node;
+        // head->next->next->data = -15;
     }
 
     int* getStats() const{
@@ -43,7 +48,7 @@ public:
         }
         arr[0] = currMin;
         arr[1] = currMax;
-        float average = (static_cast<float>(sum) / vals.size()) + 0.5;
+        float average = (static_cast<float>(sum) / vals.size());
         arr[2] = average;
         return arr;
     }

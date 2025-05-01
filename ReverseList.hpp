@@ -24,6 +24,9 @@ public:
             vals.push_back(curr->data);
             curr = curr->next;
         }
+        if(vals.size()==0){
+            return newList;
+        }
         Node* node = new Node;
         node->data = vals.at(vals.size()-1);
         newList.head = node;

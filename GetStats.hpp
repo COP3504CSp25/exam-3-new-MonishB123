@@ -23,6 +23,12 @@ public:
             curr = curr->next;
         }
         int* arr = new int;
+        if(vals.size() ==0){
+            arr[0] = 0;
+            arr[1] = 0;
+            arr[2] = 0;
+            return arr;
+        }
         int currMin = vals.at(0);
         int currMax = vals.at(0);
         int sum = vals.at(0);

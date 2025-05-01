@@ -12,9 +12,6 @@ public:
         newNode->data = data;
         newNode->next = head;
         head = newNode;
-        //testing
-        head->next = new Node;
-        head->next->data = 3;
     }
 
     int* getStats() const{

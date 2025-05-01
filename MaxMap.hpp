@@ -22,5 +22,16 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
 
 std::map<std::string, float> returnMaxMap(const std::map<std::string, std::vector<float>>& in_map) {
     //implement your function here
-    
+    std::map<std::string, float> MaxMap;
+    for(auto it = in_map.begin(); it != in_map.end(); it++){
+        std::vector<float> vec = it->second;
+        float currMax = vec.at(0);
+        for (int i = 1; i < vec.size(); i++){
+            if(vec.at(i) > currMax){
+                currMax = vec.at(i);
+            }
+        }
+        MaxMap[it->first] = currMax;
+    }
+    return MaxMap;
 }

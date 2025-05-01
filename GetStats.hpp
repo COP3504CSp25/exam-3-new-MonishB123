@@ -23,6 +23,7 @@ public:
             curr = curr->next;
         }
         int arr[3];
+        int* arr = new int;
         int currMin = vals.at(0);
         int currMax = vals.at(0);
         int sum = vals.at(0);

@@ -28,7 +28,7 @@ public:
         node->data = vals.at(vals.size()-1);
         newList.head = node;
 
-        Node* curr = newList.head;
+        curr = newList.head;
         for(int i = vals.size()-2; i >= 0; i--){
             Node* aNode = new Node;
             aNode->data = vals.at(i);
